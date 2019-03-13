@@ -1,0 +1,132 @@
+{
+  "imports": {
+    "$$dataInfo": "./base/data-info.json",
+    "$$toolbar": "./base/tool-bars.json",
+    "$$uiDefaults": "./base/ui-default-options.json"
+  },
+  "translateItems": ["admin"],
+  "dataInfo": "$$dataInfo.dataInfo",
+  "metaData": {
+    "UiDefaultOptions": ["$$uiDefaults.select"],
+    "menuItems": [{
+        "title": "mainPage",
+        "icon": "nb-home",
+        "link": "../admin",
+        "home": true
+      },
+      {
+        "title": "base-data",
+        "group": true
+      },
+      {
+        "title": "userAccount_-_role",
+        "icon": "nb-person",
+        "link": "/pages/ui-features",
+        "children": [{
+            "title": "new_userAccount",
+            "link": "userAccount"
+          },
+          {
+            "title": "userAccount_list",
+            "link": "userAccount-list"
+          },
+          {
+            "title": "new_role",
+            "link": "role"
+          },
+          {
+            "title": "role_lis",
+            "link": "role-list"
+          }
+        ]
+      }
+    ],
+    "dataItems": [],
+    "entities": [{
+        "key": "userAccount",
+        "fields": [{
+            "name": "userName",
+            "required": true,
+            "fieldType": "text"
+          },
+          {
+            "name": "title",
+            "required": true,
+            "fieldType": "text"
+          },
+          {
+            "name": "password",
+            "title": "login.password",
+            "required": true,
+            "showInList": false,
+            "fieldType": "password"
+          },
+          {
+            "name": "isActive",
+            "required": true,
+            "fieldType": "boolean"
+          }
+        ],
+        "defaultEntity": {
+          "isActive": true
+        }
+      },
+      {
+        "key": "role",
+        "fields": [{
+            "name": "title",
+            "required": true,
+            "fieldType": "text"
+          },
+          {
+            "name": "isActive",
+            "required": true,
+
+            "fieldType": "boolean"
+          }
+        ],
+        "defaultEntity": {
+          "isActive": true
+        }
+      }
+    ],
+    "views": [{
+        "key": "userAccount",
+        "viewType": "Detail",
+        "entity": "userAccount",
+        "toolbarKey": "userDetailToolBar"
+      },
+      {
+        "key": "userAccount-list",
+        "viewType": "List",
+        "entity": "userAccount"
+      },
+
+      {
+        "key": "role",
+        "viewType": "Detail",
+        "entity": "role"
+      },
+      {
+        "key": "role-list",
+        "viewType": "List",
+        "entity": "role"
+      }
+    ],
+    "toolbars": [{
+        "key": "userDetailToolBar",
+        "items": [
+          "&&detailToolBar",
+          "-",
+          {
+            "key": "role",
+            "icon": "fa-user-circle",
+            "disableExpr": "!host.currentEntity || !host.currentEntity.viewModelId"
+          }
+        ]
+      },
+      "$$toolbar.detailToolBar",
+      "$$toolbar.listToolBar"
+    ]
+  }
+}
