@@ -6,7 +6,7 @@ A first draft starter kit for [**Narik**](http://narik.me "**Narik**") with [Dev
 
 First of all copy repo to local machine .
 ```
-git clone  https://github.com/NarikMe/narik-material-demo
+git clone  https://github.com/NarikMe/narik-devextreme-starter
 ```
 
 After  that install dependencies.
