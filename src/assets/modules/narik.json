@@ -1,20 +1,17 @@
 {
-  "translateItems": ["narik"],
+
   "metaData": {
-    "events": [
-      {
-        "eventType": "MODULE_LOAD_COMPLETELY",
-        "info": {
-          "subjectType": "ReplaySubject",
-          "subjectParam": 10
-        }
+    "translateItems": ["narik"],
+    "events": [{
+      "key": "MODULE_LOAD_COMPLETELY",
+      "info": {
+        "subjectType": "ReplaySubject",
+        "subjectParam": 10
       }
-    ],
-    "toolbars": [
-      {
+    }],
+    "toolbars": [{
         "key": "selectToolbar",
-        "items": [
-          {
+        "items": [{
             "key": "refresh",
             "busyExpr": "host.dataIsLoading"
           },
@@ -30,12 +27,10 @@
       },
       {
         "key": "selectRefreshToolbar",
-        "items": [
-          {
-            "key": "refresh",
-            "busyExpr": "host.dataIsLoading"
-          }
-        ]
+        "items": [{
+          "key": "refresh",
+          "busyExpr": "host.dataIsLoading"
+        }]
       }
     ]
   }

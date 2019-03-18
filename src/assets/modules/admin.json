@@ -4,9 +4,9 @@
     "$$toolbar": "./base/tool-bars.json",
     "$$uiDefaults": "./base/ui-default-options.json"
   },
-  "translateItems": ["admin"],
-  "dataInfo": "$$dataInfo.dataInfo",
   "metaData": {
+    "translateItems": ["admin"],
+    "dataInfo": "$$dataInfo.dataInfo",
     "UiDefaultOptions": ["$$uiDefaults.select"],
     "menuItems": [{
         "title": "mainPage",
