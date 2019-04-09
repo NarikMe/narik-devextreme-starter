@@ -7,7 +7,7 @@
   "metaData": {
     "translateItems": ["admin"],
     "dataInfo": "$$dataInfo.dataInfo",
-    "uiDefaultOptions": ["$$uiDefaults.select"],
+    "uiDefaultOptions": ["$$uiDefaults.select","$$uiDefaults.data-table"],
     "menuItems": [{
         "title": "mainPage",
         "icon": "nb-home",
