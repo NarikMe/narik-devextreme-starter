@@ -1,5 +1,5 @@
 # narik-devextreme-starter
-A first draft starter kit for [**Narik**](http://narik.me "**Narik**") with [Devextreme Angular](https://js.devexpress.com/Overview/Angular/ "devextreme angular")
+A starter kit for [**Narik**](http://narik.me "**Narik**") with [Devextreme Angular](https://js.devexpress.com/Overview/Angular/ "devextreme angular")
 
 
 # Running the demo
@@ -23,8 +23,9 @@ ng serve
 
 Use **admin** as username and **123** as password.
 
-More documentation will be available **asap**.
+## Documentation
 
-[narik.me](http://narik.me "narik.me")
+You can find documentation in  [Narik Wiki](https://github.com/NarikMe/narik-angular/wiki)
+and [Narik.me](http://narik.me)
 
 
