@@ -9,5 +9,9 @@
   "base-data": "Base Data",
   "mainPage": "Main Page",
   "role_command_hint": "Roles",
-  "selectRole":"Select Role"
+  "selectRole": "Select Role",
+  "errors": {
+    "DUPLICATE_USER_NAME": "The user name is duplicate",
+    "ADMIN_IS_NOT_EDITABLE": "Admin user is not editable!"
+  }
 }
