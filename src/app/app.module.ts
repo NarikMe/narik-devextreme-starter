@@ -22,11 +22,12 @@ import { NarikAppCoreModule } from "narik-app-core";
 import { NarikJwtAuthenticationModule } from "narik-jwt-authentication";
 import { NarikClientStorageModule } from "narik-client-storage";
 
-import { NbLayoutDirection, NbThemeModule } from "@nebular/theme";
+import { NbLayoutDirection, NbThemeModule, NbIconModule } from "@nebular/theme";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MainModule } from "./modules/main/main.module";
 import { Observable } from "rxjs/internal/Observable";
 import { DemoCommandProcessor } from "./services/command-processor.service";
+import { NbEvaIconsModule } from "@nebular/eva-icons";
 
 const moduleKey = "NarikDemo";
 
@@ -58,6 +59,8 @@ const moduleKey = "NarikDemo";
       tokenStorage: "localStorage",
       loginPageUrl: "/"
     }),
+    NbEvaIconsModule,
+    NbIconModule,
     NbThemeModule.forRoot(
       { name: "default" },
       undefined,

@@ -10,7 +10,7 @@
     "uiDefaultOptions": ["$$uiDefaults.select","$$uiDefaults.data-table"],
     "menuItems": [{
         "title": "mainPage",
-        "icon": "nb-home",
+
         "link": "../admin",
         "home": true
       },
@@ -20,7 +20,7 @@
       },
       {
         "title": "userAccount_-_role",
-        "icon": "nb-person",
+
         "link": "/pages/ui-features",
         "children": [{
             "title": "new_userAccount",
