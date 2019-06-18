@@ -8,9 +8,10 @@
     "translateItems": ["admin"],
     "dataInfo": "$$dataInfo.dataInfo",
     "uiDefaultOptions": ["$$uiDefaults.select","$$uiDefaults.data-table"],
-    "menuItems": [{
+    "menuItems": [
+      {
         "title": "mainPage",
-
+        "icon": "home-outline",
         "link": "../admin",
         "home": true
       },
@@ -20,9 +21,10 @@
       },
       {
         "title": "userAccount_-_role",
-
+        "icon": "people-outline",
         "link": "/pages/ui-features",
-        "children": [{
+        "children": [
+          {
             "title": "new_userAccount",
             "link": "userAccount"
           },
