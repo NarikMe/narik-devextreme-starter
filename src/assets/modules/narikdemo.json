@@ -1,9 +1,11 @@
 {
   "imports": {
-    "$$dataInfo": "./base/data-info.json"
+    "$$dataInfo": "./base/data-info.json",
+    "$$uiDefaults": "./base/ui-default-options.json"
   },
   "metaData": {
     "translateItems": ["material", "toolbar"],
-    "dataInfo": "$$dataInfo.dataInfo"
+    "dataInfo": "$$dataInfo.dataInfo",
+    "uiDefaultOptions": ["$$uiDefaults.button"]
   }
 }

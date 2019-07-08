@@ -7,7 +7,12 @@
   "metaData": {
     "translateItems": ["admin"],
     "dataInfo": "$$dataInfo.dataInfo",
-    "uiDefaultOptions": ["$$uiDefaults.select","$$uiDefaults.data-table"],
+    "uiDefaultOptions": [
+      "$$uiDefaults.select",
+      "$$uiDefaults.data-table",
+      "$$uiDefaults.button",
+      "$$uiDefaults.toolbar"
+    ],
     "menuItems": [
       {
         "title": "mainPage",
@@ -44,9 +49,11 @@
       }
     ],
     "dataItems": [],
-    "entities": [{
+    "entities": [
+      {
         "key": "userAccount",
-        "fields": [{
+        "fields": [
+          {
             "name": "userName",
             "required": true,
             "fieldType": "text"
@@ -75,7 +82,8 @@
       },
       {
         "key": "role",
-        "fields": [{
+        "fields": [
+          {
             "name": "title",
             "required": true,
             "fieldType": "text"
@@ -92,7 +100,8 @@
         }
       }
     ],
-    "views": [{
+    "views": [
+      {
         "key": "userAccount",
         "viewType": "Detail",
         "entity": "userAccount",
@@ -115,7 +124,8 @@
         "entity": "role"
       }
     ],
-    "toolbars": [{
+    "toolbars": [
+      {
         "key": "userDetailToolBar",
         "items": [
           "&&detailToolBar",
