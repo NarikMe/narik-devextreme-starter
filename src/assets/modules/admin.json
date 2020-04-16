@@ -103,9 +103,9 @@
     "views": [
       {
         "key": "userAccount",
-        "viewType": "Detail",
+        "viewType": "Edit",
         "entity": "userAccount",
-        "toolbarKey": "userDetailToolBar"
+        "toolbarKey": "userEditToolBar"
       },
       {
         "key": "userAccount-list",
@@ -115,7 +115,7 @@
 
       {
         "key": "role",
-        "viewType": "Detail",
+        "viewType": "Edit",
         "entity": "role"
       },
       {
@@ -126,9 +126,9 @@
     ],
     "toolbars": [
       {
-        "key": "userDetailToolBar",
+        "key": "userEditToolBar",
         "items": [
-          "&&detailToolBar",
+          "&&editToolBar",
           "-",
           {
             "key": "role",
@@ -137,7 +137,7 @@
           }
         ]
       },
-      "$$toolbar.detailToolBar",
+      "$$toolbar.editToolBar",
       "$$toolbar.listToolBar"
     ]
   }
